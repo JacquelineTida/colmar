@@ -12,6 +12,7 @@ nav{
     display: flex;
     padding: 0 24px;
     justify-content: space-between;
+    width: cover;
 }
 strong{
     color:rgb(82, 79, 79);
@@ -41,7 +42,7 @@ strong{
 /* Banner*/
 .banner{
     background-color: rgba(170, 168, 168, 0.4);
-    width: 100%;
+    width:cover;
     padding: 32px 24px;
     display: flex;
     flex-wrap: wrap;
@@ -92,7 +93,7 @@ strong{
 
 #catalogue{
     display: flex;
-    width: cover;
+    width: 100%;
     padding-top: 32px;
 }
 .container1{
@@ -137,8 +138,8 @@ strong{
     display: flex;
     flex-direction: row;
     padding: 32px 16px;
-    width: 100%;
 }
+
 .text-item{
     padding-left: 16px;
     margin: auto 0;
@@ -263,5 +264,20 @@ strong{
 .section p{
     padding-left: 16px;
     font-size:0.9rem;
-    color: rgb(116, 114, 114);
+    color: rgb(151, 146, 146);
+}
+/*FOOTER*/
+footer{
+    height: 32px;
+    border-top: solid 0.1px rgba(150, 147, 147,0.5);
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+    color: gray;
+    font-size: 0.7rem;
+}
+footer li{
+    display: inline;
+    padding:0 10px;
+    color:gray;
 }
