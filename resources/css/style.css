@@ -45,10 +45,11 @@ strong{
     width:cover;
     padding: 32px 24px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 .banner img{
     width:60%;
+    min-width: 50%;
 }
 .learn{
     text-align: center;
@@ -276,8 +277,123 @@ footer{
     color: gray;
     font-size: 0.7rem;
 }
+footer h5{
+    font-weight: 400;
+    font-size: 0.7rem;
+}
 footer li{
     display: inline;
     padding:0 10px;
     color:gray;
+}
+/*MOBILE NAVEGADOR*/
+.menu-icon{
+    width:100%;
+    height: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+.menu-icon img{
+    width: 120%;
+}
+.container2-mobile{
+    display:inline-block
+}
+.container2-mobile .item{
+    display:block;
+    padding:16px;
+}
+.container2-mobile img{
+    width: 100%;
+}
+.courses-mobile{
+    width:100%;
+}
+.courses-mobile h2{
+    background-color: rgba(151, 146, 146,0.4);
+    padding:16px 16px 24px 16px;
+    margin:8px;
+}
+.courses-mobile a{
+    color:rgb(78, 76, 76);
+    font-weight: 500;
+    text-decoration: none;
+    font-size:1.3rem;
+}
+@media only screen and (max-width:768px){
+    .logo{
+        display:none;
+    }
+    .menu{
+        display: none;
+    }
+    .banner{
+        padding:0 0;
+        display: block;
+    }
+    .banner img{
+        width:100%;
+        margin:0 auto;
+    }
+    .learn{
+        padding:32PX 16PX;
+    }
+    .learn h2{
+        padding-top:0;
+    }
+    .container1{
+        display: none;
+    }
+    .container2{
+        display:none;
+    }
+    .course-box{
+        display:none;
+    }
+    #courses{
+        background-color: white;
+        padding:32px 8px;
+    }
+    #thesis{
+        padding:32px 0;
+        background-color: white;
+    }
+    .box-1{
+        width:100%;
+        margin: 0;
+    }
+    .box-1 video{
+        width:100%;
+    }
+    .box-1 h3,
+    p{
+        display: none;
+    }
+    .box-2{
+        display: none;
+    }
+    footer ul{
+        display: none;
+    }
+    footer{
+        padding:16px 5px;
+    }
+    footer h5{
+        text-align: center;
+        font-size:0.8rem;
+        font-weight: 400;
+    }
+}
+@media only screen and (min-width:769px){
+    .menu-icon{
+        display: none;
+    }
+    .container2-mobile{
+        display: none;
+    }
+    .courses-mobile{
+        display: none;
+    }
 }
